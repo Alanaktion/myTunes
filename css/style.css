@@ -5,8 +5,9 @@ html, body {
 	height: 100%;
 }
 body {
-	font: 12px/18px "Helvetica Neue", "Segoe UI", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	margin-top: 61px;
 	background-color: #fff;
+	font: 12px/18px "Helvetica Neue", "Segoe UI", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
 	color: #333;
 }
 
@@ -25,8 +26,11 @@ ul,ol,li {
 	height: 100%;
 }
 .jp-controls {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	display: block;
-	width: 100%;
 	height: 60px;
 	line-height: 60px;
 	background: url(../img/topbar.gif) 0 0 repeat-x;
@@ -85,7 +89,7 @@ ul,ol,li {
 }
 
 .jp-volume-bar {
-	position: absolute;
+	position: fixed;
 	left: 200px;
 	top: 26px;
 	width: 98px;
@@ -113,7 +117,7 @@ ul,ol,li {
 }
 
 .track-window-container {
-	position: absolute;
+	position: fixed;
 	top: 3px;
 	left: 50%;
 	width: 390px;
@@ -124,4 +128,30 @@ ul,ol,li {
 	width: 390px;
 	height: 54px;
 	background: url(../img/track-window.png) 0 0 no-repeat;
+}
+
+.jp-playlist-item-remove {
+	display: none;
+}
+.jp-playlist-item {
+	display: block;
+	padding: 2px 1em;
+	background-color: #fafafa;
+	border-bottom: 1px solid #e7e9ec;
+	border-top: 1px solid #fefefe;
+	color: #000;
+	text-decoration: none;
+}
+.jp-playlist-item:nth-child(4) {
+	background-color: #f1f4f7;
+	border-bottom-color: #e7e9ec;
+	border-top-color: #f6f9fb;
+}
+
+a.jp-playlist-current {
+	padding: 3px 1em;
+	border: none;
+	background-color: #8ba7c9;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,.2);
 }
