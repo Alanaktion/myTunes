@@ -7,6 +7,7 @@
 	<script src="js/jquery-1.7.2.min.js"></script>
 	<script src="js/jplayer-2.2.0/jquery.jplayer.min.js"></script>
 	<script src="js/jplayer-2.2.0/add-on/jplayer.playlist.min.js"></script>
+	<script src="js/img-preload.php"></script>
 <?php
 	flush();
 	require "playlist.php";

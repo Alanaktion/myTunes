@@ -33,7 +33,7 @@ ul,ol,li {
 	display: block;
 	height: 60px;
 	line-height: 60px;
-	background: url(../img/topbar.gif) 0 0 repeat-x;
+	background: #e6e6e6 url(../img/topbar.gif) 0 0 repeat-x;
 	color: #252525;
 	border-bottom: 1px solid #7b7b7b;
 	box-shadow: 0 0 2px rgba(0,0,0,.3);
