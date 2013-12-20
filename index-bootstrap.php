@@ -3,29 +3,7 @@
 <head>
 	<title>myTunes</title>
 	<link rel="shortcut icon" href="img/icon.png">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-1.7.2.min.js"></script>
-	<script src="js/jplayer-2.2.0/jquery.jplayer.min.js"></script>
-	<script src="js/jplayer-2.2.0/add-on/jplayer.playlist.min.js"></script>
-	<script src="js/img-preload.php"></script>
-<?php
-	flush();
-	require "playlist.php";
-?>
-	<script type="text/javascript">//<![CDATA[
-	$(document).ready(function(){
-		new jPlayerPlaylist({
-			jPlayer: '#player-core',
-			cssSelectorAncestor: '#player-ui'
-		},
-<?php echo json_encode($playlist); ?>
-		,{
-			swfPath: 'js/jplayer-2.2.0',
-			supplied: 'mp3,m4a',
-			wmode: 'window'
-		});
-	});
-	//]]></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 	<div id="player-core" class="jp-jplayer"></div>
@@ -73,5 +51,29 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jplayer-2.2.0/jquery.jplayer.min.js"></script>
+	<script src="js/jplayer-2.2.0/add-on/jplayer.playlist.min.js"></script>
+	<script src="js/img-preload.php"></script>
+<?php
+	flush();
+	// Build playlist object
+	require "playlist.php";
+?>
+	<script type="text/javascript">//<![CDATA[
+	$(document).ready(function(){
+		new jPlayerPlaylist({
+			jPlayer: '#player-core',
+			cssSelectorAncestor: '#player-ui'
+		},
+<?php echo json_encode($playlist); ?>
+		,{
+			swfPath: 'js/jplayer-2.2.0',
+			supplied: 'mp3,m4a',
+			wmode: 'window'
+		});
+	});
+	//]]></script>
 </body>
 </html>
