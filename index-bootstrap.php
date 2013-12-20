@@ -10,13 +10,15 @@
 	<div id="player-ui" class="jp-audio">
 		<div class="jp-type-playlist">
 			<div class="jp-gui jp-interface">
-				<ul class="jp-controls">
-					<li><a href="javascript:void();" class="jp-previous" tabindex="1">previous</a></li>
-					<li><a href="javascript:void();" class="jp-play" tabindex="1">play</a></li>
-					<li><a href="javascript:void();" class="jp-pause" tabindex="1">pause</a></li>
-					<li><a href="javascript:void();" class="jp-next" tabindex="1">next</a></li>
-					<!--<li><a href="javascript:void();" class="jp-stop" tabindex="1">stop</a></li>-->
-				</ul>
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="btn-group jp-controls">
+						<button type="button" class="btn btn-default jp-previous"><span class="glyphicon glyphicon-step-backward"></span></button>
+						<button type="button" class="btn btn-default jp-play"><span class="glyphicon glyphicon-play"></span></button>
+						<button type="button" class="btn btn-default jp-pause"><span class="glyphicon glyphicon-pause"></span></button>
+						<button type="button" class="btn btn-default jp-stop"><span class="glyphicon glyphicon-stop"></span></button>
+						<button type="button" class="btn btn-default jp-next"><span class="glyphicon glyphicon-step-forward"></span></button>
+					</div>
+				</nav>
 				<div class="jp-volume-bar">
 					<div class="jp-volume-bar-value"></div>
 				</div>
