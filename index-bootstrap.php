@@ -12,22 +12,32 @@
 		<div class="jp-type-playlist">
 			<div class="jp-gui jp-interface">
 				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-					<div class="btn-group jp-controls navbar-btn navbar-left">
-						<button type="button" class="btn btn-default jp-previous"><span class="glyphicon glyphicon-step-backward"></span></button>
-						<button type="button" class="btn btn-default jp-play"><span class="glyphicon glyphicon-play"></span></button>
-						<button type="button" class="btn btn-default jp-pause"><span class="glyphicon glyphicon-pause"></span></button>
-						<button type="button" class="btn btn-default jp-stop"><span class="glyphicon glyphicon-stop"></span></button>
-						<button type="button" class="btn btn-default jp-next"><span class="glyphicon glyphicon-step-forward"></span></button>
-					</div>
-					<div class="jp-volume-bar progress navbar-left" style="width: 140px;">
-						<div class="jp-volume-bar-value progress-bar"></div>
-					</div>
-					<div class="btn-group jp-toggles navbar-btn navbar-right">
-						<button type="button" class="btn btn-default jp-shuffle"><span class="glyphicon glyphicon-random"></span></button>
-						<button type="button" class="btn btn-default active jp-shuffle-off"><span class="glyphicon glyphicon-random"></span></button>
-						<button type="button" class="btn btn-default jp-repeat"><span class="glyphicon glyphicon-repeat"></span></button>
-						<button type="button" class="btn btn-default active jp-repeat-off"><span class="glyphicon glyphicon-repeat"></span></button>
-					</div>
+					<p class="navbar-text navbar-left">
+						<div class="btn-group jp-controls navbar-btn">
+							<button type="button" class="btn btn-default jp-previous"><span class="glyphicon glyphicon-step-backward"></span></button>
+							<button type="button" class="btn btn-default jp-play"><span class="glyphicon glyphicon-play"></span></button>
+							<button type="button" class="btn btn-default jp-pause"><span class="glyphicon glyphicon-pause"></span></button>
+							<button type="button" class="btn btn-default jp-stop"><span class="glyphicon glyphicon-stop"></span></button>
+							<button type="button" class="btn btn-default jp-next"><span class="glyphicon glyphicon-step-forward"></span></button>
+						</div>
+					</p>
+					<p class="navbar-text navbar-left">
+						<div class="clearfix">
+							<span class="glyphicon glyphicon-volume-down"></span>
+							<div class="jp-volume-bar progress pull-left" style="width: 140px;">
+								<div class="jp-volume-bar-value progress-bar"></div>
+							</div>
+							<span class="glyphicon glyphicon-volume-up"></span>
+						</div>
+					</p>
+					<p class="navbar-text navbar-right">
+						<div class="btn-group jp-toggles navbar-btn">
+							<button type="button" class="btn btn-default jp-shuffle"><span class="glyphicon glyphicon-random"></span></button>
+							<button type="button" class="btn btn-default active jp-shuffle-off"><span class="glyphicon glyphicon-random"></span></button>
+							<button type="button" class="btn btn-default jp-repeat"><span class="glyphicon glyphicon-repeat"></span></button>
+							<button type="button" class="btn btn-default active jp-repeat-off"><span class="glyphicon glyphicon-repeat"></span></button>
+						</div>
+					</p>
 				</nav>
 				<div class="track-window-container">
 					<div class="track-window">
