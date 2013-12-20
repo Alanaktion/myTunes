@@ -4,6 +4,7 @@
 	<title>myTunes</title>
 	<link rel="shortcut icon" href="img/icon.png">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style-bootstrap.css">
 </head>
 <body>
 	<div id="player-core" class="jp-jplayer"></div>
@@ -11,17 +12,17 @@
 		<div class="jp-type-playlist">
 			<div class="jp-gui jp-interface">
 				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-					<div class="btn-group jp-controls">
+					<div class="btn-group jp-controls navbar-btn">
 						<button type="button" class="btn btn-default jp-previous"><span class="glyphicon glyphicon-step-backward"></span></button>
 						<button type="button" class="btn btn-default jp-play"><span class="glyphicon glyphicon-play"></span></button>
 						<button type="button" class="btn btn-default jp-pause"><span class="glyphicon glyphicon-pause"></span></button>
 						<button type="button" class="btn btn-default jp-stop"><span class="glyphicon glyphicon-stop"></span></button>
 						<button type="button" class="btn btn-default jp-next"><span class="glyphicon glyphicon-step-forward"></span></button>
 					</div>
+					<div class="jp-volume-bar progress pull-left" style="width: 140px;">
+						<div class="jp-volume-bar-value progress-bar"></div>
+					</div>
 				</nav>
-				<div class="jp-volume-bar">
-					<div class="jp-volume-bar-value"></div>
-				</div>
 				<div class="track-window-container">
 					<div class="track-window">
 						<div class="jp-progress">
