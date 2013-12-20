@@ -1,7 +1,5 @@
 <?php
-
-// iTunes Library XML File
-$itunes_library = "C:\\Users\\Alan\\Music\\iTunes\\iTunes Music Library.xml";
+include("config.php");
 
 // Initialize Property List Parser
 include("plist.class.php");
