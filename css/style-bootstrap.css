@@ -1,3 +1,37 @@
 body {
-    margin-top: 50px;
+    margin-top: 55px;
+}
+.navbar .progress {
+	margin-bottom: 0;
+	transition: none;
+}
+.navbar-collapse {
+	margin: 0 8px;
+}
+
+.volume-container > div,
+.jp-time-holder > div {
+	display: inline-block;
+}
+
+.jp-volume-bar {
+	width: 140px;
+}
+.seek-bar {
+	width: 200px;
+}
+
+
+.jp-playlist ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.jp-playlist-item {
+	display: block;
+	padding: 5px 8px;
+}
+.jp-playlist-item.jp-playlist-current {
+	background-color: #428bca;
+	color: #fff;
 }

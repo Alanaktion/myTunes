@@ -28,34 +28,30 @@
 							<button type="button" class="btn btn-default jp-stop"><span class="glyphicon glyphicon-stop"></span></button>
 							<button type="button" class="btn btn-default jp-next"><span class="glyphicon glyphicon-step-forward"></span></button>
 						</div>
-						<div class="navbar-text ">
+						<div class="navbar-text volume-container">
 							<span class="glyphicon glyphicon-volume-down"></span>
-							<div class="jp-volume-bar progress" style="width: 140px; display: inline-block;">
+							<div class="jp-volume-bar progress">
 								<div class="jp-volume-bar-value progress-bar"></div>
 							</div>
 							<span class="glyphicon glyphicon-volume-up"></span>
 						</div>
-						<div class="btn-group jp-toggles navbar-btn navbar-right">
-							<button type="button" class="btn btn-default jp-shuffle"><span class="glyphicon glyphicon-random"></span></button>
-							<button type="button" class="btn btn-default active jp-shuffle-off"><span class="glyphicon glyphicon-random"></span></button>
-							<button type="button" class="btn btn-default jp-repeat"><span class="glyphicon glyphicon-repeat"></span></button>
-							<button type="button" class="btn btn-default active jp-repeat-off"><span class="glyphicon glyphicon-repeat"></span></button>
+						<div class="navbar-text jp-time-holder">
+							<div class="jp-current-time"></div>
+							<div class="seek-bar">
+								<div class="jp-seek-bar progress">
+									<div class="jp-play-bar progress-bar"></div>
+								</div>
+							</div>
+							<div class="jp-duration"></div>
+						</div>
+						<div class="jp-toggles navbar-right">
+							<button type="button" class="btn navbar-btn btn-default jp-shuffle"><span class="glyphicon glyphicon-random"></span></button>
+							<button type="button" class="btn navbar-btn btn-default active jp-shuffle-off"><span class="glyphicon glyphicon-random"></span></button>
+							<button type="button" class="btn navbar-btn btn-default jp-repeat"><span class="glyphicon glyphicon-repeat"></span></button>
+							<button type="button" class="btn navbar-btn btn-default active jp-repeat-off"><span class="glyphicon glyphicon-repeat"></span></button>
 						</div>
 					</div>
 				</nav>
-				<div class="track-window-container">
-					<div class="track-window">
-						<div class="jp-progress">
-							<div class="jp-seek-bar">
-								<div class="jp-play-bar"></div>
-							</div>
-						</div>
-						<div class="jp-time-holder">
-							<div class="jp-current-time"></div>
-							<div class="jp-duration"></div>
-						</div>
-					</div>
-				</div>
 			</div>
 			<div class="jp-playlist">
 				<ul>
